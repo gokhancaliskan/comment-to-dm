@@ -1,0 +1,20 @@
+name = "comment-to-dm"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["0 17 * * *"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[vars]
+IG_USER_ID = "YOUR_INSTAGRAM_USER_ID"
+PAGE_ID = "YOUR_FACEBOOK_PAGE_ID"
+GRAPH_VERSION = "v27.0"
+HANDLE = "yourhandle"
+KEYWORD = "link"
+REWARD = "Here is your link: https://example.com"
+SUMMARY_TO = ""
+SUMMARY_FROM = ""
